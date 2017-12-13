@@ -1,0 +1,49 @@
+Disjunkte mengder
+
+Velger en representant for hver mengde. Slå sammen mengder, og hele
+tiden sjekke om to noder er i samme mengde. Om de har samme
+representant så er de i samme mengde
+
+Mengder representeres som trær ved hjelp av foreldrepekere. Altså
+pekere til foreldrenoden. Følger vi pekerne ender vi opp i en
+rotnode.
+
+Self loop, altså at rotnoden peker på seg selv. 
+
+Union by rank heuristikkk.
+
+To røtter, en henges under den andre
+
+Er nesten konstant, hvor O(n) = m * a(n) hvor a(n) ligger mellom 0,
+4. a står for alfa
+
+
+Generisk MST
+
+Spennskoger er sammenghengende spenntrær. 
+
+Problem: Har en vektet, urettet graf. Vil knytte sammen nodene så
+billig som mulig. Om alle vektene er positive, vil grafen alltid bli
+asyklisk og derfor et tre. 
+
+Input er en urettet graf G = (V, E), og en vekt funksjon:E -> R
+
+Kruskals algoritme: En kant med minimal vekt blant de gjenværende er trygg sp lenge den
+ikke danner sykler
+
+Prims algoritme: Bygger et tre gradvis, en lett kant over snittet rundt treet er
+alltid trygg
+
+Kruskals algoritme:
+Til å begynne med er hver node en komponent i en partiell løsning
+Komponenter: Disjunkte nodemengder. Starter med v.p = v
+En skog som er fragmenter av et MSP(Minimalt spenntre)
+Den andre skogen: Disjoint set forest
+    Samme noder og komponenter
+    Rettede kanter/pekere som spiller en helt annen rolle
+
+Prims algoritme:
+Isolerte noder kan kobles til nærmeste nabo. Isolerte fragmenter kan
+kobles til sin nærmeste nabo.
+
+

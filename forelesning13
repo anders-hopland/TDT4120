@@ -1,0 +1,53 @@
+Hva er NP kompletthet og hvordan viser vi at et problem er NP
+komplett?
+
+Fra forrige gwang: matching
+MAtching: Delengde M hel delmengde i E for en urettet graf G = (V, E)
+- Ingen av kantene i M deler noder
+- Bipartit matching: M matcher 
+
+Input: En bipartit uettet graf G = (V, E)
+Output: En matching med flest mulig kanter
+
+Heltallsteoremet: Fir heltallskapasiteter git Ford Fulkerson
+heltallsflyt
+
+Legg til kilde og sluk i flytnettverket
+
+Skrell bort all flyttolkning, vi sitter igjen med en maksimal,
+bipartit matching
+
+Nytt problem, matching som ikke er bipartit, feks en lege kan jobbe
+på mer enn en feriedag
+
+Et beslutningsproblem (ihvertfall innenfor NP) kan vi tenke på som om
+det finnes et vitne for at svaret blir ja/nei
+Klassen P er slike problemer som kan løses i polynomisk tid
+
+Kompleksitetsklasse: En mengde språk
+P: Språkene kan avgjøres i polynomisk tid
+Cobhams tese: Det er disse problemene vi kan løse i praksis
+Sertifikat: En y streng som kan brukes som bevis for et ja svar
+Verifikasjonsalgoritme: Tar inn sertifikat y i tillegg til instans x
+- En algoritme A verifiserer x hvis det eksisterer et seritfikst y
+slik at ...
+ 
+ NP står for Nondeterministic polynomial time. Kan løses om vi klarer
+ å gjete sertifikater
+
+ HAM-CYCLE: språket for Hamilton sykel problemet
+
+ P vs NP: Om vi kan løse problemet, så kan vi verifisere det med
+ samme algoritme, og bare ognorere sertifikatet
+ DVS. P delmengde NP og P delmengde co-NP
+
+ co-NP er komplementet til NP
+ 
+Redubilitetsreduksjon: Transitivitet, kan vi redusere A til B, og B
+til C, kan vi løse C ved hjelp av A. Dette fungerer ikke andre veien
+om relasjonen bare er en vei.
+
+edusibilitet: Hvis A kan reduseres til B i polynomisk tid, skriver vi
+A mindre eller lik med liten p under B
+
+Reduser vekk fra NP komplette problemer, ikke til!!!!!
